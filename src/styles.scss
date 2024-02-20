@@ -2,3 +2,10 @@
 @import url('primeng/resources/themes/lara-dark-purple/theme.css');
 
 @import url('/src/styles/utendo-cufonfonts-webfont/style.css');
+
+* {
+    padding: 0;
+    margin: 0;
+    transition: all 0.4s ease-in-out;
+    font-family: 'Utendo Regular', sans-serif;
+}
