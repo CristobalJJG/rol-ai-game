@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import axios from 'axios';
+import { Class } from 'src/app/models/class';
 import { Specie } from 'src/app/models/species';
 
 @Component({
@@ -11,9 +12,11 @@ export class PlayerFormComponent implements OnInit {
   playerName: string = '';
   playerAge: number = 0;
 
-  selectedSpecie: Specie = { name: '', description: '', abilities: [] };
+  selectedSpecie: Specie | undefined;
+  selectedClass: Class | undefined;
 
   species: Specie[] = [];
+  classes: Class[] = [];
 
   async ngOnInit() {
 
@@ -23,7 +26,13 @@ export class PlayerFormComponent implements OnInit {
           this.species.push(s);
         });
       });
-    console.log(this.species);
+    await axios.get('../../../assets/data/classes.json')
+      .then((response) => {
+        console.log(response.data);
+        response.data.classes.forEach((c: Class) => {
+          this.classes.push(c);
+        });
+      });
   }
 
 

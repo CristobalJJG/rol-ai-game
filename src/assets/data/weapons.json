@@ -1,0 +1,27 @@
+{
+  "weapons": [
+    {
+      "name": "Espada",
+      "damage": 10,
+      "type": "fisico",
+      "hitCount": { "min": 1, "max": 2 }
+    },
+    {
+      "name": "Escudo",
+      "defense": 5,
+      "type": "fisico",
+      "blockChance": 0.75
+    },
+    {
+      "name": "Maze",
+      "damage": 15,
+      "type": "fisico",
+      "hitCount": { "min": 0, "max": 1 }
+    },
+    {
+      "name": "Potion",
+      "healing": 15,
+      "type": "health"
+    }
+  ]
+}

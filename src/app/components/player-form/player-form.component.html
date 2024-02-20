@@ -3,18 +3,20 @@
         <label for="species">Species:</label>
         <p-dropdown #sp [options]="species" optionLabel="name" [placeholder]="'Select a Specie'"
             [(ngModel)]="selectedSpecie" (onChange)="selectedSpecie = sp.value" [filter]="true" filterBy="name"
-            [showClear]="true" emptyMessage="'Human'" [required]="true">
+            [showClear]="true" [required]="true">
         </p-dropdown>
     </div>
-    {{selectedSpecie | json}}
+    <pre>
+        {{selectedSpecie | json}}
+    </pre>
     <div>
         <label for="class">Class:</label>
-        <select id="class">
-            <option value="">Select a class</option>
-            <option value="mage">Mage</option>
-            <option value="barbarian">Barbarian</option>
-            <option value="rogue">Rogue</option>
-            <option value="bard">Bard</option>
-        </select>
+        <p-dropdown #cl [options]="classes" optionLabel="name" [placeholder]="'Select a Class'"
+            [(ngModel)]="selectedSpecie" (onChange)="selectedClass = cl.value" [filter]="true" filterBy="name"
+            [showClear]="true" [required]="true">
+        </p-dropdown>
     </div>
+    <pre>
+        {{selectedClass | json}}
+    </pre>
 </form>
