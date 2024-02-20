@@ -1,0 +1,73 @@
+{
+  "classes": [
+    {
+      "name": "Warrior",
+      "abilities": [
+        {
+          "name": "Slash",
+          "description": "A powerful melee attack with a sword.",
+          "damage": 10,
+          "cooldown": 2
+        },
+        {
+          "name": "Shield Bash",
+          "description": "A shield attack that stuns the enemy.",
+          "damage": 8,
+          "cooldown": 3
+        },
+        {
+          "name": "Rage",
+          "description": "Temporarily increases attack power and defense.",
+          "damage": 15,
+          "cooldown": 5
+        }
+      ]
+    },
+    {
+      "name": "Mage",
+      "abilities": [
+        {
+          "name": "Fireball",
+          "description": "Launches a ball of fire at the enemy.",
+          "damage": 12,
+          "cooldown": 2
+        },
+        {
+          "name": "Frost Nova",
+          "description": "Freezes nearby enemies, slowing them down.",
+          "damage": 8,
+          "cooldown": 3
+        },
+        {
+          "name": "Arcane Blast",
+          "description": "Unleashes a powerful blast of arcane energy.",
+          "damage": 15,
+          "cooldown": 5
+        }
+      ]
+    },
+    {
+      "name": "Rogue",
+      "abilities": [
+        {
+          "name": "Backstab",
+          "description": "A surprise attack from behind, dealing extra damage.",
+          "damage": 10,
+          "cooldown": 2
+        },
+        {
+          "name": "Poison Dagger",
+          "description": "Becomes invisible, allowing for sneaky maneuvers.",
+          "damage": 8,
+          "cooldown": 3
+        },
+        {
+          "name": "Shadowstep",
+          "description": "Coats the dagger with a deadly poison.",
+          "damage": 15,
+          "cooldown": 5
+        }
+      ]
+    }
+  ]
+}

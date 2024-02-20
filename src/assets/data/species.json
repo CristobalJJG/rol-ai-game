@@ -1,0 +1,10 @@
+{
+  "species": [
+    {
+      "name": "Human",
+      "description": "A versatile species known for their adaptability and intelligence.",
+      "abilities": ["Problem-solving", "Communication", "Creativity"],
+      "weaknesses": ["Vulnerability to diseases", "Limited physical strength"]
+    }
+  ]
+}
